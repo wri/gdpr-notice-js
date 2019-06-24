@@ -3,20 +3,13 @@
  * @author Alessandro Benoit (modified by WRI web team)
  */
 
-/* function to pull in vars set in module admin config */
+/* set the variables */
 
-(function($, Drupal) {
-  Drupal.behaviors.gdpr_notice = {
-    attach: function (context, settings) {
-      window.gdpr_message = Drupal.settings.gdpr_notice.gdpr_message;
-      window.gdpr_link = Drupal.settings.gdpr_notice.gdpr_link;
-      window.gdpr_link_text = Drupal.settings.gdpr_notice.gdpr_link_text;
-      window.gdpr_button_text = Drupal.settings.gdpr_notice.gdpr_button_text;
-      window.gdpr_isactive = Drupal.settings.gdpr_notice.gdpr_isactive;
-    }
-  };
-})(jQuery, Drupal);
-
+$gdpr_message = '';
+$gdpr_link = '',
+$gdpr_link_text = '';
+$gdpr_button_text = '';
+$gdpr_isactive = true;
 
 // Main functionality wrapped in timeout to let the Drupal behavior complete
 
