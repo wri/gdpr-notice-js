@@ -5,11 +5,11 @@
 
 /* set the variables */
 
-$gdpr_message = '';
-$gdpr_link = '',
-$gdpr_link_text = '';
-$gdpr_button_text = '';
-$gdpr_isactive = true;
+var $gdpr_message = '';
+var $gdpr_link = '',
+var $gdpr_link_text = '';
+var $gdpr_button_text = '';
+var $gdpr_isactive = true;
 
 // Main functionality wrapped in timeout to let the Drupal behavior complete
 
