@@ -5,11 +5,11 @@
 
 /* set the variables */
 
-var $gdpr_message = '';
-var $gdpr_link = '',
-var $gdpr_link_text = '';
-var $gdpr_button_text = '';
-var $gdpr_isactive = true;
+window.gdpr_message = 'This website uses cookies to provide you with an improved user experience. By continuing to browse this site, you consent to the use of cookies and similar technologies. For further details please visit our';
+window.gdpr_link = 'https://www.wri.org/about/privacy-policy';
+window.gdpr_link_text = 'privacy policy';
+window.gdpr_button_text = 'OK';
+window.gdpr_isactive = true;
 
 // Main functionality wrapped in timeout to let the Drupal behavior complete
 
