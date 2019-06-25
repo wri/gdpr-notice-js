@@ -36,8 +36,7 @@ setTimeout(function () {
 
     var defaults = {
         messageLocales: {
-            en: gdpr_message + ' <a href="' + gdpr_link + '">' + gdpr_link_text + '</a>.',
-            fr: gdpr_message + ' <a href="' + gdpr_link + '">' + gdpr_link_text + '</a>.'
+            en: gdpr_message + ' <a href="' + gdpr_link + '">' + gdpr_link_text + '</a>.'
 	},
 
         cookieNoticePosition: 'bottom',
@@ -47,13 +46,11 @@ setTimeout(function () {
         learnMoreLinkHref: '/cookie-banner-information.html',
 
         learnMoreLinkText: {
-            en: 'Learn more',
-            fr: 'En savoir plus'
+            en: 'Learn more'
         },
 
         buttonLocales: {
-            en: gdpr_button_text,
-	    fr: gdpr_button_text
+            en: gdpr_button_text
         },
 
         expiresIn: 30,
@@ -68,27 +65,11 @@ setTimeout(function () {
     };
 
     /**
-     * Initialize cookie notice on DOMContentLoaded
-     * if not already initialized with alt params
-     */
-
-    //document.addEventListener('DOMContentLoaded', function () {
-    //    if (!instance) {
-    //        new cookieNoticeJS();
-    //    }
-    //});
-
-    /**
      * Constructor
      * @constructor
      */
 
     window.cookieNoticeJS = function () {
-
-        // If an instance is already set stop here
-        //if (instance !== undefined) {
-        //    return;
-        //}
 
         // Set current instance
         instance = this;
@@ -289,7 +270,7 @@ setTimeout(function () {
     }
 
     /**
-     * Set sismiss notice cookie
+     * Set dismiss notice cookie
      * @param expireIn
      */
     function setDismissNoticeCookie(expireIn) {
